@@ -13,8 +13,16 @@ public class TipCalculator {
         double bill = s.nextDouble();
         double newTip = ((double)tip/100);
         double tipTotal = (newTip*bill);
-        ///requires fix
+        //should fix for better accuracy because at the moment will not provide a double and instead a integer(fixed)
         System.out.println("____________________________________________");
-        System.out.println(tipTotal);
+        System.out.println("Your total tip value comes out to: " + currency.format(tipTotal));
+        System.out.println("____________________________________________");
+        System.out.println("Your total bill comes out to: " + currency.format(tipTotal+bill));
+        System.out.println("____________________________________________");
+        System.out.println("Each person should pay: " + currency.format(tipTotal/people) + " in tips");
+        System.out.println("____________________________________________");
+        System.out.println("Each person should pay: " + currency.format((tipTotal+bill)/people));
+        System.out.println("____________________________________________");
+        //prints out all statements of receipt
     }
 }
