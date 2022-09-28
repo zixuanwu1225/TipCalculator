@@ -2,7 +2,7 @@ import java.text.*;
 import java.util.Scanner;
 public class TipCalculator {
     public static void main(String[] args) {
-        DecimalFormat currency = new DecimalFormat("###0.00");
+        DecimalFormat currency = new DecimalFormat("$###0.00");
         Scanner s = new Scanner(System.in);
         //variables section + questions + expressions
         System.out.println("How many people are with you?");
